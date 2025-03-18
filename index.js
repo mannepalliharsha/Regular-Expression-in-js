@@ -86,3 +86,21 @@ const result13 = pattern.exec(text10);
 console.log(result13);
 
 // \n it search for newline character
+
+let text11 = "Hell Wrld! Hell W3Schls!";
+let pattern12 = /o+/g; // it is going to check globally, atleast one character
+let pattern13 = /lo*/g; // it is going to check globally L followed by zero or more character
+let pattern14 = /lo?/g; // it is going to check L globally followed by zero or one character
+const result14 = text11.match(pattern12);
+const result15 = text11.match(pattern13);
+console.log(result14);
+console.log(result15);
+
+let text12 = "100, 10 or 100000?";
+let pattern15 = /\d{4}/g; // a substring should contain the 4 digits
+let pattern16 = /\d{3,4}/g; // a substring should contain the 3 to 4 digits
+let pattern17 = /\d{3}/g; // a substring should contain atleast 3 digits
+const result16 = pattern15.test(text12);
+const result17 = pattern16.test(text12);
+console.log(result16);
+console.log(result17);
